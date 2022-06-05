@@ -13,15 +13,10 @@ Réalisation d'une application de gestion des prestations et des évenements pro
 
 ### Modele.java 
 Dans src/modele/Modele.java 
-Modifiez la ligne de code suivante en fonction de vos coordonnées de connexion :  
+Modifiez la ligne de code suivante en fonction de vos coordonnées de votre serveur :  
 
 ```Java 
-public class Modele {
-
 private static Bdd bdd = new Bdd("ip","base de donnée", "utilisateur", "mdp"); 
-
-}
-
 ```
 
 ### Driver MySQL
