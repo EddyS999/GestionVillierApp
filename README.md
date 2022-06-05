@@ -16,7 +16,7 @@ Dans src/modele/Modele.java
 Modifiez la ligne de code suivante en fonction de vos coordonnées de votre serveur :  
 
 ```Java 
-private static Bdd bdd = new Bdd("ip","base de donnée", "utilisateur", "mdp"); 
+private static Bdd uneBdd = new Bdd("ip","base de donnée", "utilisateur", "mdp"); 
 ```
 
 ### Driver MySQL
