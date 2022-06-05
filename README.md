@@ -1,5 +1,5 @@
 # GestionVillierApp  
-Réalisation d'une application de gestion des prestations et des évenements proposés par la Mairie de villiers sur Marne 
+Réalisation d'une application de gestion des prestations et des évenements proposés par la Mairie de villiers sur Marne
   
 ## images    
 
