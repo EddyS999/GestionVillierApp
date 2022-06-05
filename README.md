@@ -13,7 +13,7 @@ Réalisation d'une application de gestion des prestations et des évenements pro
 
 ### Modele.java 
 Dans src/modele/Modele.java 
-Modifiez la ligne de code suivante en fonction de vos coordonnées de votre serveur :  
+Modifiez la ligne de code suivante en fonction des coordonnées de votre serveur :  
 
 ```Java 
 private static Bdd uneBdd = new Bdd("ip","base de donnée", "utilisateur", "mdp"); 
