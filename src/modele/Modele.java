@@ -20,7 +20,7 @@ import controleur.User;
 public class Modele 
 {
 	//Connexion : 172.20.111.156
-	private static Bdd uneBdd = new Bdd("172.20.111.156","Villierbddlourd","eddy","eddy");
+	private static Bdd uneBdd = new Bdd("votre IP","Votre base de donnÃ©e","nom utilisateur","mot de passe");
 
 
 //************************** GESTION DES USERS **************************
@@ -29,7 +29,7 @@ public class Modele
 	//retourne un user 
 	public static User selectWhereUser(String email, String mdp)   //on selectionne un user
 	{
-	User unUser = null;  //le user que nous allons récupérer de la base de donées 
+	User unUser = null;  //le user que nous allons rÃ©cupÃ©rer de la base de donÃ©es 
 	String requete ="select * from userppe where email='"+email
 			+"' and mdp='" + mdp +"';";
 		//System.out.println(requete);
@@ -53,7 +53,7 @@ public class Modele
 	
 	}
 	catch(SQLException exp) {
-		System.out.println("Erreur de requête :"+requete);
+		System.out.println("Erreur de requÃªte :"+requete);
 	
 	}
 
@@ -81,7 +81,7 @@ public class Modele
 			uneBdd.seDeconnecter();
 		}
 		catch(SQLException exp) {
-			System.out.println("Erreur de requête :"+requete);
+			System.out.println("Erreur de requÃªte :"+requete);
 			
 		}
 	}
@@ -118,7 +118,7 @@ public class Modele
 		}
 	}
 	catch(SQLException exp) {
-		System.out.println("Erreur de requête :"+requete);
+		System.out.println("Erreur de requÃªte :"+requete);
 		exp.printStackTrace();
 	}
 	
@@ -128,7 +128,7 @@ public class Modele
 	
 	public static Famille selectWhereFamille(int idfamille)   //on selectionne un Famille
 	{
-		Famille uneFamille = null;  //le Famille que nous allons récupérer de la base de donées 
+		Famille uneFamille = null;  //le Famille que nous allons rÃ©cupÃ©rer de la base de donÃ©es 
 		String requete ="select * from Famille where idFamille ="+idfamille+" ;";
 	
 	try {
@@ -157,7 +157,7 @@ public class Modele
 		
 	}
 		catch(SQLException exp) {
-			System.out.println("Erreur de requête :"+requete);
+			System.out.println("Erreur de requÃªte :"+requete);
 		
 	}
 	
@@ -166,9 +166,9 @@ public class Modele
 	}
 	
 	public static Famille selectWhereFamille(String nom,String prenom, String adresse, String ville, String email) 
-	//On vien de surchager la méthode 
+	//On vien de surchager la mÃ©thode 
 	{
-		Famille uneFamille = null;  //le Famille que nous allons récupérer de la base de donées 
+		Famille uneFamille = null;  //le Famille que nous allons rÃ©cupÃ©rer de la base de donÃ©es 
 		String requete ="select * from Famille where "
 				+"nom ='"+nom+ "'and prenom='"+prenom+"' and adresse='" +adresse
 				+"' and ville='"+ville+"' and email='" +email +"';";
@@ -200,7 +200,7 @@ public class Modele
 		
 	}
 		catch(SQLException exp) {
-			System.out.println("Erreur de requête :"+requete);
+			System.out.println("Erreur de requÃªte :"+requete);
 		
 	}
 	
@@ -233,7 +233,7 @@ public class Modele
 			uneBdd.seDeconnecter();
 		}
 		catch(SQLException exp) {
-			System.out.println("Erreur de requête :"+requete);
+			System.out.println("Erreur de requÃªte :"+requete);
 			
 		}
 	}
@@ -255,7 +255,7 @@ public class Modele
 			uneBdd.seDeconnecter();
 		}
 		catch(SQLException exp) {
-			System.out.println("Erreur de requête :"+requete);
+			System.out.println("Erreur de requÃªte :"+requete);
 			
 		}
 		
@@ -353,7 +353,7 @@ public class Modele
 			uneBdd.seDeconnecter();
 		}
 		catch(SQLException exp) {
-			System.out.println("Erreur de requête :"+requete);
+			System.out.println("Erreur de requÃªte :"+requete);
 			
 		}
 	}
@@ -379,7 +379,7 @@ public class Modele
 		}
 	}
 	catch(SQLException exp) {
-		System.out.println("Erreur de requête :"+requete);
+		System.out.println("Erreur de requÃªte :"+requete);
 		
 	}
 	
@@ -391,7 +391,7 @@ public class Modele
 	
 	public static TypeEvent selectWhereTypeEvent(int codetypeevent)   //on selectionne un Famille
 	{
-		TypeEvent unTypeEvent = null;  //le Famille que nous allons récupérer de la base de donées 
+		TypeEvent unTypeEvent = null;  //le Famille que nous allons rÃ©cupÃ©rer de la base de donÃ©es 
 		String requete ="select * from TypeEvent where codetypeevent ="+codetypeevent+" ;";
 	
 	try {
@@ -410,7 +410,7 @@ public class Modele
 		
 	}
 		catch(SQLException exp) {
-			System.out.println("Erreur de requête :"+requete);
+			System.out.println("Erreur de requÃªte :"+requete);
 		
 	}
 	
@@ -419,9 +419,9 @@ public class Modele
 	}
 	
 	public static TypeEvent selectWhereTypeEvent(String nomtypeevent) 
-	//On vien de surchager la méthode 
+	//On vien de surchager la mÃ©thode 
 	{
-		TypeEvent unTypeEvent = null;  //le type d'Evenement que nous allons récupérer de la base de donées 
+		TypeEvent unTypeEvent = null;  //le type d'Evenement que nous allons rÃ©cupÃ©rer de la base de donÃ©es 
 		String requete ="select * from TypeEvent where "
 				+"nomtypeevent ='"+nomtypeevent +"';";
 	
@@ -442,7 +442,7 @@ public class Modele
 		
 	}
 		catch(SQLException exp) {
-			System.out.println("Erreur de requête :"+requete);
+			System.out.println("Erreur de requÃªte :"+requete);
 		
 	}
 	
@@ -464,7 +464,7 @@ public class Modele
 			uneBdd.seDeconnecter();
 		}
 		catch(SQLException exp) {
-			System.out.println("Erreur de requête :"+requete);
+			System.out.println("Erreur de requÃªte :"+requete);
 			
 		}
 		
@@ -543,7 +543,7 @@ public class Modele
 			uneBdd.seDeconnecter();
 		}
 		catch(SQLException exp) {
-			System.out.println("Erreur de requête :"+requete);
+			System.out.println("Erreur de requÃªte :"+requete);
 			
 		}
 	}
@@ -575,7 +575,7 @@ public class Modele
 		}
 	}
 	catch(SQLException exp) {
-		System.out.println("Erreur de requête :"+requete);
+		System.out.println("Erreur de requÃªte :"+requete);
 		
 	}
 	
@@ -585,7 +585,7 @@ public class Modele
 	
 	public static Evenement selectWhereEvenement(int codeevent)  
 	{
-		Evenement unEvenement = null;  //le Evenement que nous allons récupérer de la base de donées 
+		Evenement unEvenement = null;  //le Evenement que nous allons rÃ©cupÃ©rer de la base de donÃ©es 
 		String requete ="select * from evenement where codeevent ="+codeevent+" ;";
 	
 	try {
@@ -609,7 +609,7 @@ public class Modele
 		
 	}
 		catch(SQLException exp) {
-			System.out.println("Erreur de requête :"+requete);
+			System.out.println("Erreur de requÃªte :"+requete);
 		
 	}
 	
@@ -619,9 +619,9 @@ public class Modele
 	
 	
 	public static Evenement selectWhereEvenement(String nomevent, String lieuevent) 
-	//On vien de surchager la méthode 
+	//On vien de surchager la mÃ©thode 
 	{
-		Evenement unEvenement = null;  //le Evenement que nous allons récupérer de la base de donées 
+		Evenement unEvenement = null;  //le Evenement que nous allons rÃ©cupÃ©rer de la base de donÃ©es 
 		String requete ="select * from evenement where "
 				+"nomevent ='"+nomevent+ "'and lieuevent='"+lieuevent +"';";
 	
@@ -646,7 +646,7 @@ public class Modele
 		
 	}
 		catch(SQLException exp) {
-			System.out.println("Erreur de requête :"+requete);
+			System.out.println("Erreur de requÃªte :"+requete);
 		
 	}
 	
@@ -737,7 +737,7 @@ public class Modele
 			uneBdd.seDeconnecter();
 		}
 		catch(SQLException exp) {
-			System.out.println("Erreur de requête :"+requete);
+			System.out.println("Erreur de requÃªte :"+requete);
 			
 		}
 		
@@ -786,7 +786,7 @@ public class Modele
 		}
 	}
 	catch(SQLException exp) {
-		System.out.println("Erreur de requête :"+requete);
+		System.out.println("Erreur de requÃªte :"+requete);
 		
 	}
 	
@@ -845,7 +845,7 @@ public class Modele
 			uneBdd.seDeconnecter();
 		}
 		catch(SQLException exp) {
-			System.out.println("Erreur de requête :"+requete);
+			System.out.println("Erreur de requÃªte :"+requete);
 			
 		}
 	}
@@ -855,7 +855,7 @@ public class Modele
 	public static TypePresta selectWhereTypePresta(String nomtypepresta)
 	{
 	
-		TypePresta unTypePresta = null;  //le type presta que nous allons récupérer de la base de donées 
+		TypePresta unTypePresta = null;  //le type presta que nous allons rÃ©cupÃ©rer de la base de donÃ©es 
 		String requete ="select * from typepresta where "
 				+"nomtypepresta ='"+nomtypepresta+ "';";
 	
@@ -874,7 +874,7 @@ public class Modele
 		
 	}
 		catch(SQLException exp) {
-			System.out.println("Erreur de requête :"+requete);
+			System.out.println("Erreur de requÃªte :"+requete);
 		
 	}
 	
@@ -897,7 +897,7 @@ public class Modele
 			uneBdd.seDeconnecter();
 		}
 		catch(SQLException exp) {
-			System.out.println("Erreur de requête :"+requete);
+			System.out.println("Erreur de requÃªte :"+requete);
 			
 		}
 		
@@ -938,7 +938,7 @@ public class Modele
 		uneBdd.seDeconnecter();
 	}
 	catch(SQLException exp) {
-		System.out.println("Erreur de requête :"+requete);
+		System.out.println("Erreur de requÃªte :"+requete);
 		
 	}
 	}
@@ -947,7 +947,7 @@ public class Modele
 
 	public static Prestation selectWherePrestation(String libellepresta) 
 	{
-		Prestation unePrestation = null;  //la prestation que nous allons récupérer de la base de donées 
+		Prestation unePrestation = null;  //la prestation que nous allons rÃ©cupÃ©rer de la base de donÃ©es 
 		String requete ="select * from prestation where libellepresta ='"+libellepresta+"' ;";
 	
 	try {
@@ -971,7 +971,7 @@ public class Modele
 		
 	}
 		catch(SQLException exp) {
-			System.out.println("Erreur de requête :"+requete);
+			System.out.println("Erreur de requÃªte :"+requete);
 		
 	}
 	
@@ -1000,7 +1000,7 @@ public class Modele
 		uneBdd.seDeconnecter();
 	}
 	catch(SQLException exp) {
-		System.out.println("Erreur de requête :"+requete);
+		System.out.println("Erreur de requÃªte :"+requete);
 		
 	}
 		
@@ -1035,7 +1035,7 @@ public class Modele
 		}
 	}
 	catch(SQLException exp) {
-		System.out.println("Erreur de requête :"+requete);
+		System.out.println("Erreur de requÃªte :"+requete);
 		
 	}
 	
