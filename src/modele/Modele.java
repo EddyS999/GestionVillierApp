@@ -19,7 +19,7 @@ import controleur.User;
 
 public class Modele 
 {
-	//Connexion : 172.20.111.156
+	
 	private static Bdd uneBdd = new Bdd("votre IP","Votre base de donnée","nom utilisateur","mot de passe");
 
 
