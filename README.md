@@ -1,5 +1,5 @@
 # GestionVillierApp  
-Réalisation d'une application de gestion des prestations et des évenements proposés par la Mairie de villiers sur Marne
+Making of a management application for services and events offered by the Town Hall of Villiers-sur-Marne
   
 ## images    
 
@@ -8,12 +8,12 @@ Réalisation d'une application de gestion des prestations et des évenements pro
 ![1](https://user-images.githubusercontent.com/71152540/172053823-a8d160b3-d0db-4d09-87d3-8bd798a47601.PNG)  
 
 
-## Comment utiliser le logiciel ? 
+## Getting started   
 
 
 ### Modele.java 
-Dans src/modele/Modele.java 
-Modifiez la ligne de code suivante en fonction des coordonnées de votre serveur :  
+In src/modele/Modele.java 
+Update the following code according to your server information:  
 
 ```Java 
 private static Bdd uneBdd = new Bdd("ip","base de donnée", "utilisateur", "mdp"); 
@@ -21,4 +21,4 @@ private static Bdd uneBdd = new Bdd("ip","base de donnée", "utilisateur", "mdp"
 
 ### Driver MySQL
 
-Téléchargez le driver Mysql-connector-Java : https://fr.osdn.net/projects/sfnet_id2d/downloads/jdbc%20drivers/mysql-connector-java-5.1.15-bin.jar/
+download Mysql-connector-Java : https://fr.osdn.net/projects/sfnet_id2d/downloads/jdbc%20drivers/mysql-connector-java-5.1.15-bin.jar/
